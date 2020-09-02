@@ -15,8 +15,9 @@ Given a record of every transaction during a three month period, calculate the r
 ## Project Overview
 This solution was written with .NET 3.1.300.
 
-The files are laid in this manner:
+The files are laid out in this manner:
 
+<pre>
   CustomerPointsCalculator.sln
   src
     |
@@ -32,6 +33,7 @@ The files are laid in this manner:
        |
        |- PoinsCalculator_UT.cs
        |- CustomerPointsCalculatorTests.csproj
+</pre>
 
 ## Design Thoughts
 
@@ -43,4 +45,4 @@ Traditional Object Oriented design would also have pushed me to implement an int
 ### PointsCalculator
 There are two implementation methods in PointsCalculator. The method named "CalculatePointsOrig" was my original implementation as I created the solution with TDD.  The current CalculatePoints method is the refactored implementation to eliminate the if blocks. You can rename the methods and run the test suite and both implementations pass.
 
-The refactored implementation may be able to take advantage of the pattern matching changes that are coming out in C# 9. I didn't explore that avenue in this solution at all.
+The refactored implementation may be able to take advantage of the pattern matching changes that are coming out in C# 9. I didn't explore that avenue in this solution.
