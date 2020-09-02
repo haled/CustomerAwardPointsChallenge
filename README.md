@@ -46,3 +46,6 @@ Traditional Object Oriented design would also have pushed me to implement an int
 There are two implementation methods in PointsCalculator. The method named "CalculatePointsOrig" was my original implementation as I created the solution with TDD.  The current CalculatePoints method is the refactored implementation to eliminate the if blocks. You can rename the methods and run the test suite and both implementations pass.
 
 The refactored implementation may be able to take advantage of the pattern matching changes that are coming out in C# 9. I didn't explore that avenue in this solution.
+
+### Exercising the Code
+The Program.cs file contains the main method for the program. It sets up a fictictious list of transactions and calculates the customer points for those transactions. To make the solution easy to examine, running the program prints the transactions to the console along with the calculated points.
